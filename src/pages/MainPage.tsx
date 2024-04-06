@@ -1,4 +1,4 @@
-import { Checkbox, Flex, Heading, Select } from "@chakra-ui/react";
+import { Checkbox, Flex, Heading, Select, Text } from "@chakra-ui/react";
 import Papa from "papaparse";
 import { useEffect, useMemo, useState } from "react";
 import { Header } from "src/components";
@@ -16,8 +16,10 @@ function MainPage() {
 	const [districts, setDistricts] = useState<GminaItem[]>([]);
 	const [selectedDistrict, setSelectedDistrict] = useState<GminaItem>();
 	const [isAbove20K, setIsAbove20K] = useState(false);
+	const [isoLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
+		setIsLoading(true);
 		fetch("/csv/obwody_glosowania_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
@@ -30,7 +32,10 @@ function MainPage() {
 					...new Set(results.data.map(item => item.Województwo)),
 				]);
 			})
-			.catch(error => console.error("Error loading CSV:", error));
+			.catch(error => console.error("Error loading CSV:", error))
+			.finally(() => {
+				setIsLoading(false);
+			});
 	}, []);
 
 	useEffect(() => {
@@ -72,6 +77,10 @@ function MainPage() {
 			)),
 		[gminy]
 	);
+
+	if (isoLoading) {
+		return <Text>Loading...</Text>;
+	}
 
 	return (
 		<>
