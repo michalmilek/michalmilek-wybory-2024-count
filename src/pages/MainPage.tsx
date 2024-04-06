@@ -1,4 +1,5 @@
 import {
+	Button,
 	Checkbox,
 	Flex,
 	Heading,
@@ -11,6 +12,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Header } from "src/components";
 import VotingType from "src/components/VotingType";
 import { GminaItem } from "src/types/rada_gmin_types";
+import { clearVotesFromLocalStorage } from "src/utils/utils";
 
 function MainPage() {
 	const [data, setData] = useState<GminaItem[]>([]);
@@ -105,6 +107,13 @@ function MainPage() {
 						Uwaga2! Proszę pamietać o ręcznym zaznaczeniu "Miasto/Wieś powyżej
 						20 tyś."!!!
 					</Text>
+					<Flex>
+						<Text>
+							Po skończonych wyborach wyczyść sobie pamięć podręczną urządzenia
+							naciskając na przycisk
+						</Text>
+						<Button onClick={clearVotesFromLocalStorage}>Wyczyść</Button>
+					</Flex>
 					<Heading
 						size={"lg"}
 						as="h2">
