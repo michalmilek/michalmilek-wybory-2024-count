@@ -1,22 +1,16 @@
 import { Button, ListItem, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import { Candidate } from "src/types/candidate_type";
+import { PresidentCandidate } from "src/types/president_type";
 
 interface Props {
-	candidate: Candidate;
-	handleIncrease: VoidFunction;
-	handleDecrease: VoidFunction;
+	presidentCandidate: PresidentCandidate;
 }
 
-const CandidateItem = ({
-	candidate,
-	handleDecrease: handlePartyDecrease,
-	handleIncrease: handlePartyIncrease,
-}: Props) => {
-	const localStorageKey = `votes-${
-		candidate["Nazwisko i imiona"] +
-		candidate["Nr okręgu"] +
-		candidate["Nazwa komitetu"]
+const PresidentItem = ({ presidentCandidate }: Props) => {
+	const localStorageKey = `votes-president-${
+		presidentCandidate["Nazwisko i imiona"] +
+		presidentCandidate.Obszar +
+		presidentCandidate["Nazwa komitetu"]
 	}`;
 
 	const [count, setCount] = useState(() => {
@@ -30,21 +24,21 @@ const CandidateItem = ({
 	const handleDecrease = () => {
 		if (count > 0) {
 			setCount(count - 1);
-			handlePartyDecrease();
 		}
 	};
 
 	const handleIncrease = () => {
 		setCount(count + 1);
-		handlePartyIncrease();
 	};
 
 	return (
 		<ListItem className="flex items-center space-x-2">
 			<Text>
-				{candidate["Pozycja na liście"] ||
-					candidate["Numer na karcie do głosowania"]}
-				. {candidate["Nazwisko i imiona"]}
+				{presidentCandidate["Numer na karcie do głosowania"]}.{" "}
+				<span className="font-bold">
+					{presidentCandidate["Nazwisko i imiona"]}{" "}
+				</span>
+				{presidentCandidate["Nazwa komitetu"]}
 			</Text>
 			<Button
 				size="sm"
@@ -63,4 +57,4 @@ const CandidateItem = ({
 	);
 };
 
-export default CandidateItem;
+export default PresidentItem;

@@ -1,3 +1,4 @@
+import { Box, Heading, Skeleton, UnorderedList } from "@chakra-ui/react";
 import Papa from "papaparse";
 import { useEffect, useState } from "react";
 import CandidatesPartyList from "src/components/CandidatesPartyList";
@@ -16,8 +17,10 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 	const [groupedCandidates, setGroupedCandidates] = useState<
 		Record<string, Candidate[]>
 	>({});
+	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
+		setIsLoading(true);
 		fetch("src/assets/csv/okregi_rady_gmin_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
@@ -41,12 +44,17 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 				});
 				console.log("🚀 ~ properCouncil:", properCouncil);
 				setCommunityCouncil(properCouncil);
+				setIsLoading(false);
 			})
-			.catch(error => console.error("Error loading CSV:", error));
+			.catch(error => {
+				console.error("Error loading CSV:", error);
+				setIsLoading(false);
+			});
 	}, [selectedDistrict]);
 
 	useEffect(() => {
 		if (communityCouncil) {
+			setIsLoading(true);
 			const csvFilePath = isAbove20K
 				? "src/assets/csv/kandydaci_rada_gmin_above20k.csv"
 				: "src/assets/csv/kandydaci_rady_gmin_under20k.csv";
@@ -63,34 +71,59 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 							candidate["Nr okręgu"] === communityCouncil["Numer okręgu"]
 					);
 					setCandidates(filteredCandidates);
+					setIsLoading(false);
 				})
-				.catch(error => console.error("Error loading CSV:", error));
+				.catch(error => {
+					console.error("Error loading CSV:", error);
+					setIsLoading(false);
+				});
 		}
 	}, [selectedDistrict, isAbove20K, communityCouncil]);
 
 	useEffect(() => {
 		if (candidates.length) {
-			const grouped = candidates.reduce((acc, candidate) => {
-				const uniqueKey = `${candidate["Nr listy"]}-${candidate["Nazwa komitetu"]}`;
+			const grouped: Record<string, Candidate[]> = candidates.reduce(
+				(acc: Record<string, Candidate[]>, candidate) => {
+					const uniqueKey = `${candidate["Nr listy"]}-${candidate["Nazwa komitetu"]}`;
 
-				if (!acc[uniqueKey]) {
-					acc[uniqueKey] = [];
-				}
+					if (!acc[uniqueKey]) {
+						acc[uniqueKey] = [];
+					}
 
-				acc[uniqueKey].push(candidate);
+					acc[uniqueKey].push(candidate);
 
-				return acc;
-			}, {});
+					return acc;
+				},
+				{}
+			);
 
 			setGroupedCandidates(grouped);
 		}
 	}, [candidates]);
 
 	return (
-		<div className="px-10">
-			<h2 className="text-2xl font-bold">Listy</h2>
-			<ul>
-				<>
+		<Box className="w-full">
+			<Heading
+				as="h2"
+				size="lg"
+				fontWeight="bold"
+				mb={8}>
+				Listy
+			</Heading>
+			{isLoading ? (
+				<div className="space-y-4">
+					{Array.from({ length: 3 }).map((_, index) => (
+						<Skeleton
+							key={`skeleton-${index}`}
+							height="350px"
+							width="100%"
+						/>
+					))}
+				</div>
+			) : (
+				<UnorderedList
+					px={0}
+					spacing={4}>
 					{Object.entries(groupedCandidates).map(([listNumber, candidates]) => (
 						<CandidatesPartyList
 							key={listNumber}
@@ -98,9 +131,9 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 							candidates={candidates}
 						/>
 					))}
-				</>
-			</ul>
-		</div>
+				</UnorderedList>
+			)}
+		</Box>
 	);
 };
 
