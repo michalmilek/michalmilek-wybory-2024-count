@@ -46,7 +46,7 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 						items.includes(street)
 					);
 
-					return matchingStreets.length >= 3;
+					return matchingStreets.length >= 2;
 				});
 				setCommunityCouncil(properCouncil);
 				setIsLoading(false);
