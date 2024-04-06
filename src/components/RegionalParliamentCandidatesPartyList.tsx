@@ -1,14 +1,17 @@
 import { Box, Text, UnorderedList } from "@chakra-ui/react";
 import { useState } from "react";
-import CandidateItem from "src/components/CandidateItem";
-import { Candidate } from "src/types/candidate_type";
+import RegionalParliamentItem from "src/components/RegionalParliamentItem";
+import { RegionalParliamentCandidate } from "src/types/regional_parliament_type";
 
 interface Props {
 	listNumber: string;
-	candidates: Candidate[];
+	candidates: RegionalParliamentCandidate[];
 }
 
-const CandidatesPartyList = ({ candidates, listNumber }: Props) => {
+const RegionalParliamentCandidatesPartyList = ({
+	candidates,
+	listNumber,
+}: Props) => {
 	const [partyCount, setPartyCount] = useState(0);
 
 	const handleDecrease = () => {
@@ -35,7 +38,7 @@ const CandidatesPartyList = ({ candidates, listNumber }: Props) => {
 			</Text>
 			<UnorderedList spacing={3}>
 				{candidates.map((candidate, index) => (
-					<CandidateItem
+					<RegionalParliamentItem
 						handleIncrease={handleIncrease}
 						handleDecrease={handleDecrease}
 						key={candidate["Nazwisko i imiona"] + index}
@@ -47,4 +50,4 @@ const CandidatesPartyList = ({ candidates, listNumber }: Props) => {
 	);
 };
 
-export default CandidatesPartyList;
+export default RegionalParliamentCandidatesPartyList;

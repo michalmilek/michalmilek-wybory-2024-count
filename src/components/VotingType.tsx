@@ -28,7 +28,8 @@ const VotingType = ({ selectedDistrict, isAbove20K }: Props) => {
 		<Box className="w-full">
 			<Flex
 				gap={4}
-				mb={8}>
+				mb={8}
+				flexWrap={"wrap"}>
 				<Button
 					colorScheme={
 						selectedValue === VotingEnum.Prezydenckie ? "blue" : "gray"
