@@ -32,6 +32,8 @@ const PresidentVoting = ({ selectedDistrict }: Props) => {
 			})
 			.catch(error => {
 				console.error("Error loading CSV:", error);
+			})
+			.finally(() => {
 				setIsLoading(false);
 			});
 	}, [selectedDistrict]);
