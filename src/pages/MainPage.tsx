@@ -1,4 +1,11 @@
-import { Checkbox, Flex, Heading, Select, Text } from "@chakra-ui/react";
+import {
+	Checkbox,
+	Flex,
+	Heading,
+	Select,
+	Spinner,
+	Text,
+} from "@chakra-ui/react";
 import Papa from "papaparse";
 import { useEffect, useMemo, useState } from "react";
 import { Header } from "src/components";
@@ -78,95 +85,100 @@ function MainPage() {
 		[gminy]
 	);
 
-	if (isoLoading) {
-		return <Text>Loading...</Text>;
-	}
-
 	return (
 		<>
 			<Header />
-			<Flex
-				mt={4}
-				flexDir={"column"}
-				gap={"4"}
-				px={10}>
-				<Heading
-					size={"lg"}
-					as="h2">
-					Znajdź swoją komisję
-				</Heading>
-				<Flex className="flex items-center gap-10 flex-wrap mb-8">
-					<Select
-						onChange={e => setSelectedWojewodztwo(e.target.value)}
-						value={selectedWojewodztwo}>
-						<option value="">Wybierz województwo</option>
-						{wojewodztwa.map(woj => (
-							<option
-								key={woj}
-								value={woj}>
-								{woj}
-							</option>
-						))}
-					</Select>
+			{isoLoading ? (
+				<div className="min-h-60vh mt-20 w-full flex items-center justify-center">
+					<Spinner size="xl" />
+				</div>
+			) : (
+				<Flex
+					flexDir={"column"}
+					gap={"4"}
+					px={10}>
+					<Text my={6}>
+						Uwaga! Duże miasta mogą być na dole listy powiatów, np. jeśli
+						twojego OKW nie ma na liscie, to poszukaj innego powiatu
+					</Text>
+					<Heading
+						size={"lg"}
+						as="h2">
+						Znajdź swoją komisję
+					</Heading>
+					<Flex className="flex items-center gap-10 flex-wrap mb-8">
+						<Select
+							onChange={e => setSelectedWojewodztwo(e.target.value)}
+							value={selectedWojewodztwo}>
+							<option value="">Wybierz województwo</option>
+							{wojewodztwa.map(woj => (
+								<option
+									key={woj}
+									value={woj}>
+									{woj}
+								</option>
+							))}
+						</Select>
 
-					<Select
-						onChange={e => setSelectedPowiat(e.target.value)}
-						value={selectedPowiat}
-						disabled={!selectedWojewodztwo}>
-						<option value="">Wybierz powiat</option>
-						{powiaty.map(pow => (
-							<option
-								key={pow}
-								value={pow}>
-								{pow}
-							</option>
-						))}
-					</Select>
+						<Select
+							onChange={e => setSelectedPowiat(e.target.value)}
+							value={selectedPowiat}
+							disabled={!selectedWojewodztwo}>
+							<option value="">Wybierz powiat</option>
+							{powiaty.map(pow => (
+								<option
+									key={pow}
+									value={pow}>
+									{pow}
+								</option>
+							))}
+						</Select>
 
-					<Select
-						onChange={e => setSelectedGmina(e.target.value)}
-						disabled={!selectedPowiat}>
-						<option value="">Wybierz gminę</option>
-						{uniqueGminyOptions}
-					</Select>
+						<Select
+							onChange={e => setSelectedGmina(e.target.value)}
+							disabled={!selectedPowiat}>
+							<option value="">Wybierz gminę</option>
+							{uniqueGminyOptions}
+						</Select>
 
-					<label
-						htmlFor="above-20k"
-						className="flex items-center gap-2 select-none cursor-pointer">
-						<Checkbox
-							id="above-20k"
-							checked={isAbove20K}
-							onChange={() => setIsAbove20K(!isAbove20K)}
-						/>
-						Powyżej 20 tys. mieszkańców
-					</label>
+						<label
+							htmlFor="above-20k"
+							className="flex items-center gap-2 select-none cursor-pointer">
+							<Checkbox
+								id="above-20k"
+								checked={isAbove20K}
+								onChange={() => setIsAbove20K(!isAbove20K)}
+							/>
+							Miasto/Wieś powyżej 20 tys. mieszkańców
+						</label>
 
-					<Select
-						onChange={e => {
-							setSelectedDistrict(
-								districts.find(district => district.Numer === e.target.value)
-							);
-						}}
-						value={selectedDistrict?.Numer || ""}
-						disabled={!selectedGmina}>
-						<option value="">Wybierz okręg</option>
-						{districts.map((district, index) => (
-							<option
-								key={index}
-								value={district.Numer}>
-								{district.Numer}. {district.Miejscowość} {district.Ulica}{" "}
-								{district["Numer lokalu"]} {district["Numer posesji"]}
-							</option>
-						))}
-					</Select>
-					{selectedDistrict && (
-						<VotingType
-							isAbove20K={isAbove20K}
-							selectedDistrict={selectedDistrict}
-						/>
-					)}
+						<Select
+							onChange={e => {
+								setSelectedDistrict(
+									districts.find(district => district.Numer === e.target.value)
+								);
+							}}
+							value={selectedDistrict?.Numer || ""}
+							disabled={!selectedGmina}>
+							<option value="">Wybierz okręg</option>
+							{districts.map((district, index) => (
+								<option
+									key={index}
+									value={district.Numer}>
+									{district.Numer}. {district.Miejscowość} {district.Ulica}{" "}
+									{district["Numer lokalu"]} {district["Numer posesji"]}
+								</option>
+							))}
+						</Select>
+						{selectedDistrict && (
+							<VotingType
+								isAbove20K={isAbove20K}
+								selectedDistrict={selectedDistrict}
+							/>
+						)}
+					</Flex>
 				</Flex>
-			</Flex>
+			)}
 		</>
 	);
 }
