@@ -99,7 +99,11 @@ function MainPage() {
 					px={10}>
 					<Text my={6}>
 						Uwaga! Duże miasta mogą być na dole listy powiatów, np. jeśli
-						twojego OKW nie ma na liscie, to poszukaj innego powiatu
+						twojego OKW nie ma na liscie, to poszukaj innego powiatu.
+					</Text>
+					<Text my={6}>
+						Uwaga2! Proszę pamietać o ręcznym zaznaczeniu "Miasto/Wieś powyżej
+						20 tyś."!!!
 					</Text>
 					<Heading
 						size={"lg"}

@@ -5,6 +5,7 @@ import CountyElectionPartyList from "src/components/CountyElectionPartyList";
 import { CountyCandidate } from "src/types/county_candidate_type";
 import { CountyElectionDistrict } from "src/types/county_election_district_type";
 import { GminaItem } from "src/types/rada_gmin_types";
+a;
 
 interface Props {
 	selectedDistrict: GminaItem;
