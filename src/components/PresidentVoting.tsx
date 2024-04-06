@@ -18,7 +18,7 @@ const PresidentVoting = ({ selectedDistrict }: Props) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		fetch("src/assets/csv/kandydaci_wbp_utf8.csv")
+		fetch("/csv/kandydaci_wbp_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<PresidentCandidate>(csvText, {

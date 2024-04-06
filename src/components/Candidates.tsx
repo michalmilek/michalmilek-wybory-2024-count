@@ -21,7 +21,7 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		fetch("src/assets/csv/okregi_rady_gmin_utf8.csv")
+		fetch("/csv/okregi_rady_gmin_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<CommunityCouncil>(csvText, {
@@ -55,8 +55,8 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 		if (communityCouncil) {
 			setIsLoading(true);
 			const csvFilePath = isAbove20K
-				? "src/assets/csv/kandydaci_rada_gmin_above20k.csv"
-				: "src/assets/csv/kandydaci_rady_gmin_under20k.csv";
+				? "/csv/kandydaci_rada_gmin_above20k.csv"
+				: "/csv/kandydaci_rady_gmin_under20k.csv";
 			fetch(csvFilePath)
 				.then(response => response.text())
 				.then(csvText => {

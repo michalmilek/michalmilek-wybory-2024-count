@@ -23,7 +23,7 @@ const CountyElection = ({ selectedDistrict }: Props) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		fetch("src/assets/csv/okregi_rady_powiatow_utf8.csv")
+		fetch("/csv/okregi_rady_powiatow_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<CountyElectionDistrict>(csvText, {
@@ -49,7 +49,7 @@ const CountyElection = ({ selectedDistrict }: Props) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		fetch("src/assets/csv/kandydaci_rady_powiatow_utf8.csv")
+		fetch("/csv/kandydaci_rady_powiatow_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<CountyCandidate>(csvText, {

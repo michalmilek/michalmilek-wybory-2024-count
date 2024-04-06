@@ -1,0 +1,86 @@
+﻿"Województwo";"Wybierany organ";"Numer okręgu";"Liczba mandatów";"Liczba list";"Liczba kandydatów";"Mieszkańcy";"Wyborcy";"Siedziba TKW";"Opis granic";"TERYT Województwa";"Liczba wysłanych pakietów wyborczych"
+"dolnośląskie";"Sejmik Województwa Dolnośląskiego";1;8;9;83;574522;469003;"Wrocław";"miasto: Wrocław";"020000";143
+"dolnośląskie";"Sejmik Województwa Dolnośląskiego";2;8;9;84;631158;501581;"Wrocław";"powiaty: górowski, milicki, oleśnicki, oławski, strzeliński, średzki, trzebnicki, wołowski, wrocławski";"020000";52
+"dolnośląskie";"Sejmik Województwa Dolnośląskiego";3;8;9;80;574327;482109;"Wrocław";"miasto: Wałbrzych, powiaty: dzierżoniowski, kłodzki, świdnicki, wałbrzyski, ząbkowicki";"020000";107
+"dolnośląskie";"Sejmik Województwa Dolnośląskiego";4;6;8;63;418873;349430;"Wrocław";"miasto: Jelenia Góra, powiaty: bolesławiecki, karkonoski, kamiennogórski, lubański, lwówecki, zgorzelecki";"020000";38
+"dolnośląskie";"Sejmik Województwa Dolnośląskiego";5;6;8;63;460846;376482;"Wrocław";"miasto: Legnica, powiaty: głogowski, jaworski, legnicki, lubiński, polkowicki, złotoryjski";"020000";41
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";1;5;6;40;290752;243161;"Toruń";"Miasto Bydgoszcz";"040000";93
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";2;5;7;46;295746;233988;"Toruń";"Powiaty: bydgoski, sępoleński, świecki, tucholski";"040000";34
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";3;5;6;40;306290;247168;"Toruń";"Miasto Grudziądz, powiaty: brodnicki, golubsko-dobrzyński, grudziądzki, rypiński, wąbrzeski";"040000";67
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";4;5;7;46;326973;264306;"Toruń";"Miasto Toruń, powiaty: chełmiński, toruński";"040000";49
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";5;5;6;41;334288;272275;"Toruń";"Powiaty: inowrocławski, mogileński, nakielski, żniński";"040000";31
+"kujawsko-pomorskie";"Sejmik Województwa Kujawsko-Pomorskiego";6;5;8;50;330126;271887;"Toruń";"Miasto Włocławek, powiaty: aleksandrowski, lipnowski, radziejowski, włocławski";"040000";32
+"lubelskie";"Sejmik Województwa Lubelskiego";1;5;8;52;305046;250825;"Lublin";"Miasto na prawach powiatu Lublin";"060000";97
+"lubelskie";"Sejmik Województwa Lubelskiego";2;10;9;91;592596;483042;"Lublin";"Powiaty: janowski, kraśnicki, lubartowski, lubelski, opolski, puławski, rycki";"060000";42
+"lubelskie";"Sejmik Województwa Lubelskiego";3;6;8;56;353830;284580;"Lublin";"Powiaty: bialski, parczewski, radzyński, łukowski, miasto na prawach powiatu Biała Podlaska";"060000";45
+"lubelskie";"Sejmik Województwa Lubelskiego";4;6;8;55;349303;287951;"Lublin";"Powiaty: chełmski, łęczyński, krasnostawski, świdnicki, włodawski, miasto na prawach powiatu Chełm";"060000";111
+"lubelskie";"Sejmik Województwa Lubelskiego";5;6;8;60;395421;328982;"Lublin";"Powiaty: biłgorajski, hrubieszowski, zamojski, tomaszowski, miasto na prawach powiatu Zamość";"060000";33
+"lubuskie";"Sejmik Województwa Lubuskiego";1;7;9;71;221646;180212;"Zielona Góra";"miasto Gorzów Wielkopolski; powiaty: strzelecko-drezdenecki, gorzowski";"080000";23
+"lubuskie";"Sejmik Województwa Lubuskiego";2;6;7;51;181153;146502;"Zielona Góra";"powiaty: świebodziński, sulęciński, słubicki, międzyrzecki";"080000";70
+"lubuskie";"Sejmik Województwa Lubuskiego";3;5;8;55;138461;113251;"Zielona Góra";"powiaty: żarski, krośnieński";"080000";39
+"lubuskie";"Sejmik Województwa Lubuskiego";4;6;7;54;198524;161644;"Zielona Góra";"miasto Zielona Góra, powiat zielonogórski";"080000";30
+"lubuskie";"Sejmik Województwa Lubuskiego";5;6;8;59;186726;152421;"Zielona Góra";"powiaty: wschowski, żagański, nowosolski";"080000";64
+"łódzkie";"Sejmik Województwa Łódzkiego";1;8;9;76;580783;490162;"Łódź";"Łódź";"100000";165
+"łódzkie";"Sejmik Województwa Łódzkiego";2;5;9;57;367113;302829;"Łódź";"powiat kutnowski, powiat łęczycki, powiat łowicki, powiat zgierski";"100000";51
+"łódzkie";"Sejmik Województwa Łódzkiego";3;8;8;70;535344;438941;"Łódź";"powiat łaski, powiat pabianicki, powiat pajęczański, powiat poddębicki, powiat sieradzki, powiat wieluński, powiat wieruszowski, powiat zduńskowolski";"100000";51
+"łódzkie";"Sejmik Województwa Łódzkiego";4;7;8;62;440648;358958;"Łódź";"Piotrków Trybunalski, powiat bełchatowski, powiat łódzki wschodni, powiat piotrkowski, powiat radomszczański";"100000";35
+"łódzkie";"Sejmik Województwa Łódzkiego";5;5;10;63;339074;275252;"Łódź";"Skierniewice, powiat opoczyński, powiat rawski, powiat skierniewicki, powiat tomaszowski, powiat brzeziński";"100000";34
+"małopolskie";"Sejmik Województwa Małopolskiego";1;5;8;52;408726;336801;"Kraków";"Powiaty: olkuski, chrzanowski, oświęcimski, miechowski";"120000";49
+"małopolskie";"Sejmik Województwa Małopolskiego";2;6;8;58;457061;360008;"Kraków";"Powiaty: proszowicki, krakowski, wielicki";"120000";46
+"małopolskie";"Sejmik Województwa Małopolskiego";3;8;9;75;709715;578600;"Kraków";"m. Kraków";"120000";179
+"małopolskie";"Sejmik Województwa Małopolskiego";4;7;8;64;617457;489534;"Kraków";"Powiaty: wadowicki, myslenicki, suski, nowotarski, tatrzański";"120000";96
+"małopolskie";"Sejmik Województwa Małopolskiego";5;7;8;60;550191;444139;"Kraków";"Powiaty: bocheński, brzeski, dąbrowski, tarnowski, m. Tarnów";"120000";135
+"małopolskie";"Sejmik Województwa Małopolskiego";6;6;9;65;532686;414944;"Kraków";"Powiaty: limanowski, gorlicki, nowosądecki, m. Nowy Sącz";"120000";156
+"mazowieckie";"Sejmik Województwa Mazowieckiego";1;5;10;63;541860;441380;"Warszawa";"Dzielnice m. st. Warszawy: Mokotów, Ochota, Śródmieście, Ursynów, Wilanów";"140000";194
+"mazowieckie";"Sejmik Województwa Mazowieckiego";2;5;8;50;513434;411948;"Warszawa";"Dzielnice m. st. Warszawy: Bemowo, Bielany, Ursus, Włochy, Wola, Żoliborz";"140000";110
+"mazowieckie";"Sejmik Województwa Mazowieckiego";3;6;10;69;589257;469556;"Warszawa";"Dzielnice m. st. Warszawy: Białołęka, Rembertów, Targówek, Wawer, Wesoła, Praga Północ, Praga Południe";"140000";162
+"mazowieckie";"Sejmik Województwa Mazowieckiego";4;8;9;78;829234;673894;"Warszawa";"miasto Płock; powiaty: ciechanowski, gostyniński, mławski, płocki, płoński, przasnyski, pułtuski, sierpecki, sochaczewski, żuromiński, żyrardowski";"140000";81
+"mazowieckie";"Sejmik Województwa Mazowieckiego";5;7;10;80;668256;543451;"Warszawa";"miasto Radom; powiaty: białobrzeski, grójecki, kozienicki, lipski, przysuski, radomski, szydłowiecki, zwoleński";"140000";157
+"mazowieckie";"Sejmik Województwa Mazowieckiego";6;9;12;103;877861;699756;"Warszawa";"miasta Ostrołęka i Siedlce; powiaty: garwoliński, łosicki, makowski, miński, ostrołęcki, ostrowski, siedlecki, sokołowski, węgrowski, wyszkowski";"140000";101
+"mazowieckie";"Sejmik Województwa Mazowieckiego";7;11;11;115;1136907;887026;"Warszawa";"Powiaty: grodziski, legionowski, nowodworski, otwocki, piaseczyński, pruszkowski, warszawski zachodni, wołomiński";"140000";189
+"opolskie";"Sejmik Województwa Opolskiego";1;8;8;71;230575;190931;"Opole";"miasto Opole, pow. opolski";"160000";26
+"opolskie";"Sejmik Województwa Opolskiego";2;5;7;47;159842;132279;"Opole";"pow. kluczborski, pow. namysłowski, pow. oleski";"160000";17
+"opolskie";"Sejmik Województwa Opolskiego";3;5;8;50;151441;125723;"Opole";"pow. kędzierzyńsko-kozielski, pow. strzelecki";"160000";11
+"opolskie";"Sejmik Województwa Opolskiego";4;5;8;52;148907;123846;"Opole";"pow. głubczycki, pow. krapkowicki. pow. prudnicki";"160000";34
+"opolskie";"Sejmik Województwa Opolskiego";5;7;8;65;206040;171285;"Opole";"pow. brzeski, pow. nyski";"160000";40
+"podkarpackie";"Sejmik Województwa Podkarpackiego";1;8;7;67;504086;401398;"Rzeszów";"m. Rzeszów; pow. leżajski; pow. łańcucki; pow. rzeszowski";"180000";61
+"podkarpackie";"Sejmik Województwa Podkarpackiego";2;6;8;61;396180;317986;"Rzeszów";"pow. dębicki; pow. mielecki; pow. ropczycko-sędziszowski; pow. strzyżowski";"180000";33
+"podkarpackie";"Sejmik Województwa Podkarpackiego";3;5;7;47;317815;262560;"Rzeszów";"m. Tarnobrzeg; pow. kolbuszowski; pow. niżański; pow. stalowowolski; pow. tarnobrzeski";"180000";34
+"podkarpackie";"Sejmik Województwa Podkarpackiego";4;6;7;52;371690;304441;"Rzeszów";"m. Przemyśl; pow. jarosławski; pow. lubaczowski; pow. przemyski; pow. przeworski";"180000";53
+"podkarpackie";"Sejmik Województwa Podkarpackiego";5;8;6;59;462254;378516;"Rzeszów";"m. Krosno; pow. bieszczadzki; pow. brzozowski; pow. jasielski; pow. krośnieński; pow. leski; pow. sanocki";"180000";95
+"podlaskie";"Sejmik Województwa Podlaskiego";1;7;7;58;261590;212624;"Białystok";"miasto Białystok";"200000";57
+"podlaskie";"Sejmik Województwa Podlaskiego";2;8;8;74;274245;224244;"Białystok";"powiat augustowski, powiat sejneński, powiat suwalski, powiat sokólski, powiat moniecki, miasto Suwałki";"200000";24
+"podlaskie";"Sejmik Województwa Podlaskiego";3;6;8;57;227784;185545;"Białystok";"powiat grajewski, powiat kolneński, powiat łomżyński, powiat zambrowski, miasto Łomża";"200000";50
+"podlaskie";"Sejmik Województwa Podlaskiego";4;9;7;70;339994;277308;"Białystok";"powiat bielski, powiat siemiatycki, powiat wysokomazowiecki, powiat hajnowski, powiat białostocki";"200000";42
+"pomorskie";"Sejmik Województwa Pomorskiego";1;7;7;59;450119;360028;"Gdańsk";"miasto Słupsk, powiat słupski, powiat lęborski, powiat bytowski, powiat człuchowski, powiat chojnicki";"220000";79
+"pomorskie";"Sejmik Województwa Pomorskiego";2;8;8;72;540388;432134;"Gdańsk";"miasto Gdynia, miasto Sopot, powiat pucki, powiat wejherowski";"220000";98
+"pomorskie";"Sejmik Województwa Pomorskiego";3;6;7;54;419615;343140;"Gdańsk";"miasto Gdańsk";"220000";98
+"pomorskie";"Sejmik Województwa Pomorskiego";4;7;8;67;451983;344406;"Gdańsk";"powiat kartuski, powiat kościerski, powiat gdański, powiat starogardzki";"220000";33
+"pomorskie";"Sejmik Województwa Pomorskiego";5;5;7;49;311704;250309;"Gdańsk";"powiat tczewski, powiat nowodworski, powiat malborski, powiat sztumski, powiat kwidzyński";"220000";30
+"śląskie";"Sejmik Województwa Śląskiego";1;7;13;91;629001;507894;"Katowice";"miasto Bielsko-Biała; powiaty: bielski, cieszyński, żywiecki";"240000";136
+"śląskie";"Sejmik Województwa Śląskiego";2;7;12;91;596324;488586;"Katowice";"miasta: Katowice, Mysłowice, Tychy; powiaty: bieruńsko-lędziński, pszczyński";"240000";118
+"śląskie";"Sejmik Województwa Śląskiego";3;7;13;97;667570;541856;"Katowice";"miasta: Jastrzębie Zdrój, Rybnik, Żory; powiaty: mikołowski, raciborski, rybnicki, wodzisławski";"240000";75
+"śląskie";"Sejmik Województwa Śląskiego";4;7;10;79;598483;492449;"Katowice";"miasta: Bytom, Gliwice; powiaty: gliwicki, lubliniecki, tarnogórski";"240000";118
+"śląskie";"Sejmik Województwa Śląskiego";5;5;11;72;501820;415049;"Katowice";"miasta: Chorzów, Piekary Śląskie, Ruda Śląska, Siemianowice Śląskie, Świętochłowice, Zabrze";"240000";81
+"śląskie";"Sejmik Województwa Śląskiego";6;5;10;66;471856;392823;"Katowice";"miasto: Częstochowa; powiaty: częstochowski, kłobucki, myszkowski";"240000";110
+"śląskie";"Sejmik Województwa Śląskiego";7;7;14;102;606078;508598;"Katowice";"miasta na prawach powiatu: Dąbrowa Górnicza, Jaworzno, Sosnowiec; powiaty: będziński, zawierciański";"240000";107
+"świętokrzyskie";"Sejmik Województwa Świętokrzyskiego";1;7;7;60;289808;242707;"Kielce";"powiaty: sandomierski, opatowski, ostrowiecki, staszowski";"260000";62
+"świętokrzyskie";"Sejmik Województwa Świętokrzyskiego";2;6;8;63;225034;189525;"Kielce";"powiaty: starachowicki, skarżyski, konecki";"260000";32
+"świętokrzyskie";"Sejmik Województwa Świętokrzyskiego";3;10;8;90;382970;312783;"Kielce";"powiaty: kielecki, miasto Kielce";"260000";50
+"świętokrzyskie";"Sejmik Województwa Świętokrzyskiego";4;7;9;72;262129;217725;"Kielce";"powiaty: włoszczowski, jędrzejowski, pińczowski, buski, kazimierski";"260000";18
+"warmińsko-mazurskie";"Sejmik Województwa Warmińsko-Mazurskiego";1;6;6;45;274625;223641;"Olsztyn";"Miasto Olsztyn, powiat olsztyński";"280000";40
+"warmińsko-mazurskie";"Sejmik Województwa Warmińsko-Mazurskiego";2;7;7;54;287696;231011;"Olsztyn";"Powiaty: działdowski, iławski, nowomiejski, ostródzki";"280000";35
+"warmińsko-mazurskie";"Sejmik Województwa Warmińsko-Mazurskiego";3;6;7;51;285290;235038;"Olsztyn";"Miasto Elbląg, powiaty: bartoszycki, braniewski, elbląski, lidzbarski";"280000";44
+"warmińsko-mazurskie";"Sejmik Województwa Warmińsko-Mazurskiego";4;5;6;40;216561;176217;"Olsztyn";"Powiaty: ełcki, gołdapski, kętrzyński, olecki, węgorzewski";"280000";39
+"warmińsko-mazurskie";"Sejmik Województwa Warmińsko-Mazurskiego";5;6;6;45;246986;201891;"Olsztyn";"Powiaty: giżycki, mrągowski, nidzicki, piski, szczycieński";"280000";14
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";1;5;9;59;459831;379697;"Poznań";"Miasto Poznań";"300000";87
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";2;7;9;73;563348;451443;"Poznań";"powiaty: chodzieski, czarnkowsko-trzcianecki, międzychodzki, obornicki, pilski, szamotulski, wągrowiecki, złotowski";"300000";55
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";3;8;8;72;737350;574633;"Poznań";"powiaty: poznański, śremski, średzki, gnieźnieński, wrzesiński";"300000";63
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";4;5;8;53;412412;335142;"Poznań";"Miasto Konin, powiaty: koniński, kolski, słupecki, turecki";"300000";28
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";5;7;9;72;561048;453292;"Poznań";"Miasto Kalisz, powiaty: kępiński, kaliski, ostrowski, ostrzeszowski, jarociński, pleszewski";"300000";60
+"wielkopolskie";"Sejmik Województwa Wielkopolskiego";6;7;8;63;573417;454680;"Poznań";"Miasto Leszno, powiaty: gostyński, grodziski, kościański, krotoszyński, leszczyński, nowotomyski, rawicki, wolsztyński";"300000";89
+"zachodniopomorskie";"Sejmik Województwa Zachodniopomorskiego";1;8;9;78;417398;343233;"Szczecin";"Miasto Szczecin, powiat policki";"320000";71
+"zachodniopomorskie";"Sejmik Województwa Zachodniopomorskiego";2;5;7;46;242355;199647;"Szczecin";"Miasto Świnoujście, powiat goleniowski, powiat gryficki, powiat kamieński, powiat łobeski";"320000";32
+"zachodniopomorskie";"Sejmik Województwa Zachodniopomorskiego";3;5;8;52;259354;213968;"Szczecin";"powiat choszczeński, powiat drawski, powiat kołobrzeski, powiat świdwiński, powiat wałecki";"320000";28
+"zachodniopomorskie";"Sejmik Województwa Zachodniopomorskiego";4;6;8;57;321399;264200;"Szczecin";"Miasto Koszalin, powiat białogardzki, powiat koszaliński, powiat sławieński, powiat szczecinecki";"320000";47
+"zachodniopomorskie";"Sejmik Województwa Zachodniopomorskiego";5;6;8;60;281901;230085;"Szczecin";"powiat gryfiński, powiat myśliborski, powiat pyrzycki, powiat stargardzki";"320000";24

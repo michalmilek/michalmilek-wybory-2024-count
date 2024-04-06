@@ -18,7 +18,7 @@ function MainPage() {
 	const [isAbove20K, setIsAbove20K] = useState(false);
 
 	useEffect(() => {
-		fetch("src/assets/csv/obwody_glosowania_utf8.csv")
+		fetch("/csv/obwody_glosowania_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<GminaItem>(csvText, {

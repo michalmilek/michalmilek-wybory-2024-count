@@ -20,7 +20,7 @@ const RegionalParliament = ({ selectedDistrict }: Props) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		fetch("src/assets/csv/okregi_sejmiki_wojewodztw_utf8.csv")
+		fetch("/csv/okregi_sejmiki_wojewodztw_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
 				const results = Papa.parse<RegionalParliamentDistrict>(csvText, {
@@ -49,7 +49,7 @@ const RegionalParliament = ({ selectedDistrict }: Props) => {
 	useEffect(() => {
 		if (parliamentDistrict) {
 			setIsLoading(true);
-			fetch("src/assets/csv/kandydaci_sejmiki_wojewodztw_utf8.csv")
+			fetch("/csv/kandydaci_sejmiki_wojewodztw_utf8.csv")
 				.then(response => response.text())
 				.then(csvText => {
 					const results = Papa.parse<RegionalParliamentCandidate>(csvText, {
