@@ -107,7 +107,9 @@ function MainPage() {
 						Uwaga2! Proszę pamietać o ręcznym zaznaczeniu "Miasto/Wieś powyżej
 						20 tyś."!!!
 					</Text>
-					<Flex>
+					<Flex
+						alignItems={"center"}
+						gap={8}>
 						<Text>
 							Po skończonych wyborach wyczyść sobie pamięć podręczną urządzenia
 							naciskając na przycisk
