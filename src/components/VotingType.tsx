@@ -1,6 +1,7 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import Candidates from "src/components/Candidates";
+import CountyElection from "src/components/CountyElection";
 import PresidentVoting from "src/components/PresidentVoting";
 import RegionalParliament from "src/components/RegionalParliament";
 import { GminaItem } from "src/types/rada_gmin_types";
@@ -53,6 +54,9 @@ const VotingType = ({ selectedDistrict, isAbove20K }: Props) => {
 					Powiat
 				</Button>
 			</Flex>
+			{selectedValue === VotingEnum.Powiat && (
+				<CountyElection selectedDistrict={selectedDistrict} />
+			)}
 			{selectedValue === VotingEnum.Sejmik && (
 				<RegionalParliament selectedDistrict={selectedDistrict} />
 			)}

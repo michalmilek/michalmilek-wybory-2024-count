@@ -42,7 +42,6 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 						items.includes(street)
 					);
 				});
-				console.log("🚀 ~ properCouncil:", properCouncil);
 				setCommunityCouncil(properCouncil);
 				setIsLoading(false);
 			})
