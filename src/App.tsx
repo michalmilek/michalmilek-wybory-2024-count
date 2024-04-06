@@ -21,11 +21,11 @@ function App() {
 		fetch("src/assets/csv/obwody_glosowania_utf8.csv")
 			.then(response => response.text())
 			.then(csvText => {
-				const results = Papa.parse(csvText, {
+				const results = Papa.parse<GminaItem>(csvText, {
 					header: true,
 					skipEmptyLines: true,
 				});
-				setData(results.data as GminaItem[]);
+				setData(results.data);
 				setWojewodztwa([
 					...new Set(results.data.map(item => item.Województwo)),
 				]);

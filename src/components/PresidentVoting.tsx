@@ -10,7 +10,7 @@ interface Props {
 	isAbove20K?: boolean;
 }
 
-const PresidentVoting = ({ selectedDistrict, isAbove20K }: Props) => {
+const PresidentVoting = ({ selectedDistrict }: Props) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [presidentCandidates, setPresidentCandidates] = useState<
 		PresidentCandidate[]
