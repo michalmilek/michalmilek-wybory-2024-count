@@ -3,8 +3,8 @@ import Papa from "papaparse";
 import { useEffect, useState } from "react";
 import CountyElectionPartyList from "src/components/CountyElectionPartyList";
 import { CountyCandidate } from "src/types/county_candidate_type";
+import { CountyElectionDistrict } from "src/types/county_election_district_type";
 import { GminaItem } from "src/types/rada_gmin_types";
-import { CountyElectionDistrict } from "../../../.history/michalmilek-wybory-2024-count/src/types/county_election_district_type_20240406200755";
 
 interface Props {
 	selectedDistrict: GminaItem;
