@@ -29,18 +29,24 @@ const Candidates = ({ selectedDistrict, isAbove20K }: Props) => {
 					skipEmptyLines: true,
 				});
 
-				const properCouncil = results.data.find(item => {
+				const filteredCouncils = results.data.filter(
+					item => item.Powiat === selectedDistrict.Powiat
+				);
+
+				const properCouncil = filteredCouncils.find(item => {
 					const separators = /, |: /;
 					const items = item["Opis granic"]
 						.split(separators)
 						.filter(item => !/ulice/i.test(item));
 					const separatedStreetsFromDistrict = selectedDistrict["Opis granic"]
 						.split(separators)
-						.filter(street => !/ulice/i.test(street))
-						.slice(0, 4);
-					return separatedStreetsFromDistrict.every(street =>
+						.filter(street => !/ulice/i.test(street));
+
+					const matchingStreets = separatedStreetsFromDistrict.filter(street =>
 						items.includes(street)
 					);
+
+					return matchingStreets.length >= 3;
 				});
 				setCommunityCouncil(properCouncil);
 				setIsLoading(false);
